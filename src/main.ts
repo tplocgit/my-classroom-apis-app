@@ -4,7 +4,7 @@ const PORT = 3000;
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  await app.listen(PORT);
+  await app.listen(process.env.PORT || 3000);
   console.log(`Just a API app`);
 }
 bootstrap();
