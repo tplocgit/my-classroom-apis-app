@@ -31,7 +31,7 @@ export class ClassroomsService {
     } catch (err) {
       console.log(err);
     }
-    return !!isSaved;
+    return isSaved;
   }
 
   async remove(id: string): Promise<void> {
