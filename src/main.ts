@@ -5,6 +5,6 @@ const PORT = 3000;
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   await app.listen(PORT);
-  console.log(`Your app started at http://localhost:${PORT}/`);
+  console.log(`Just a API app`);
 }
 bootstrap();
