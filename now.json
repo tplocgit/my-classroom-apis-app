@@ -1,15 +1,23 @@
 {
-    "version": 2,
-    "builds": [
+  "version": 2,
+  "builds": [
+    {
+        "src": "package.json",
+        "use": "@now/static-build"
+    }
+  ],
+  "routes": [
       {
-        "src": "dist/main.js",
-        "use": "@now/node-server"
-      }
-    ],
-    "routes": [
+          "src": "/(.*)",
+          "dest": "/$1"
+      },
       {
-        "src": "/(.*)",
-        "dest": "dist/main.js"
+          "handle": "filesystem"
+      },
+      {
+          "src": "/.*",
+          "status": 404,
+          "dest": "/404"
       }
-    ]
+  ]
 }
