@@ -9,9 +9,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'sql6.freemysqlhosting.net',
-      username: 'sql6448293',
-      password: 'KcegnwHH3p',
-      database: 'sql6448293',
+      username: 'sql6454024',
+      password: 'RpCgLcYqVK',
+      database: 'sql6454024',
       autoLoadEntities: true,
       synchronize: true,
     }),
